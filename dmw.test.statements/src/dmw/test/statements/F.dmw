@@ -1,0 +1,39 @@
+package dmw.test.statements;
+
+@java
+
+/**
+ * This widget defines test for while statement.
+ */
+class F : Widget {
+	
+	class R : Object {
+		public var number : Int;
+		public var text : String; 
+	}
+	
+	public var r : R;
+	
+	public var array : Array <r> @max(99);  
+	
+	public func populate() -> Int {
+		self.array.setSubscript(1);
+		self.r.number = 1;
+		self.array.setSubscript(2);
+		self.r.number = 2;
+		self.array.setSubscript(3);
+		self.r.number = 3;	
+		return self.array.getLast();	
+	}
+	
+	
+	public func getSum() -> Int {			
+		sum : Int = 0;
+		i : Int = 0;
+		for r in array {
+			sum = sum + 1;
+		}
+		return sum;
+	}
+		
+}				

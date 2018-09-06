@@ -1,0 +1,97 @@
+package dmw.test.statements;
+
+@java
+
+/**
+ * This widget tests generation of if statement 
+ */
+class A : Widget {	
+	
+	public func getGreaterThen10(value : Int) -> String {
+		if(value > 10) {		
+		   return "then";
+		} else {
+			return "else";
+		}		
+	}
+	
+	public func getGreaterEqualThen10(value : Int) -> String {
+		if(value >= 10) {		
+		   return "then";
+		} else {
+			return "else";
+		}		
+	}
+	
+	public func getEqual10(value : Int) -> String {
+		if(value == 10) {		
+		   return "then";
+		} else {
+		return "else";
+		}		
+	}
+		
+	public func getLessThen10(value : Int) -> String {
+		if(value < 10) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getLessEqualThen10(value : Int) -> String {
+		if(value <= 10) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getTrue() -> String {
+		if(true) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getFalse() -> String {
+		if(false) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getAnd() -> String {
+		if(true && true) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getAndFalse() -> String {
+		if(true && false) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getOr() -> String {
+		if(true || true) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+	
+	public func getOrFalse() -> String {
+		if(false || false) {		
+		   return "then";
+		} else {
+		   return "else";
+		}		
+	}
+}				

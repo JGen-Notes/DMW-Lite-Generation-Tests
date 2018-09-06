@@ -1,0 +1,42 @@
+package dmw.test.statements;
+
+@java
+
+/**
+ * This widget tests generation of the switch statement
+ */
+class B : Widget {
+	
+	public func getReturnOnInt(value : Int) -> String {	
+
+		switch	value {
+			case 1 : {
+				return "case 1";
+			}
+			case 2 : {
+				return "case 2";
+			}
+			default : {
+				return "default";
+			}
+		}
+		return ""; 
+	} 
+	
+	public func getReturnOnString(value : String) -> String {	
+
+		switch	value {
+			case "one" : {
+				return "case 1";
+			}
+			case "two" : {
+				return "case 2";
+			}
+			default : {
+				return "default";
+			}
+		}
+		return ""; 
+	}  
+
+}				

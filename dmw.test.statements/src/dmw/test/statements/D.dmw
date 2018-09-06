@@ -1,0 +1,40 @@
+package dmw.test.statements;
+
+@java
+
+/**
+ * This widget defines one array with single tuple entry to check if
+ * For In works fine.
+ */
+class D : Widget {
+	
+	class R : Object {
+		public var number : Int;
+		public var text : String;
+	}
+	
+	public var r : R;
+	
+	public var array : Array <r> @max(99);
+	
+	
+	public func getSum() -> Int {	
+		
+		self.array.setSubscript(1);
+		self.r.number = 1;
+		self.array.setSubscript(2);
+		self.r.number = 1;
+		self.array.setSubscript(3);
+		self.r.number = 1;
+		
+		t : Int = 0;
+		/*
+		 * For In statement
+		 */
+		for r in array {
+			t = t + self.r.number;
+		}
+		return t;
+	}
+		
+}				

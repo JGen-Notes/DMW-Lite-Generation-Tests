@@ -1,0 +1,38 @@
+package dmw.test.statements;
+
+@java
+
+/**
+ * This widget defines one array with single tuple entry to check if
+ * all subscripts work fine.
+ */
+class C : Widget {
+	
+	class R : Object {
+		public var number : Int;
+		public var text : String;
+	}
+	
+	public var r : R;
+	
+	public var array : Array <r> @max(99);
+	
+	
+	public func getZero() -> Int {		
+		return self.array.getSubscript();
+	}
+	
+	public func getMax() -> Int {		
+		return self.array.getMax();
+	}
+	
+	public func setSubscript(s : Int) -> Int {
+		self.array.setSubscript(s);
+		return self.array.getSubscript();
+	}
+	
+	public func getLast() -> Int{
+		return self.array.getLast();
+	}
+		
+}				

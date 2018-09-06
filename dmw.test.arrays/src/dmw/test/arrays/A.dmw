@@ -1,0 +1,45 @@
+package dmw.test.arrays;
+
+@java
+
+/**
+ * This widget defines one array with single tuple entry
+ */
+class A : Widget {
+	
+	class R : Object {
+		public var number : Int;
+		public var text : String;
+	}
+	
+	public var r : R;
+	
+	public var array : Array <r> @max(99);
+	
+	
+	
+	public func getOneNumber() -> Int {		
+		self.array.setSubscript(1);
+		self.r.number = 1;
+		self.r.text = "one";
+		self.array.setSubscript(1);
+		return self.r.number;
+		}
+		
+	public func getTwoNumber() -> Int {
+		self.array.setSubscript(2);
+		self.r.number = 2;
+		self.r.text = "two";
+		self.array.setSubscript(2);
+		return self.r.number;
+		}
+		
+	public func getOneText() -> String {		
+		self.array.setSubscript(1);
+		return self.r.text;
+		}
+	public func getTwoText() -> String {		
+		self.array.setSubscript(2);
+		return self.r.text;
+		}
+}				
